@@ -1,0 +1,104 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="crackerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8C890"/>
+      <stop offset="50%" style="stop-color:#D4B077"/>
+      <stop offset="100%" style="stop-color:#C49A55"/>
+    </linearGradient>
+    <linearGradient id="cheeseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F4D03F"/>
+      <stop offset="100%" style="stop-color:#E5B916"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDFBF7"/>
+      <stop offset="100%" style="stop-color:#F5EFE3"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Decorative elements -->
+  <g opacity="0.08">
+    <circle cx="50" cy="50" r="30" fill="#C9A84C"/>
+    <circle cx="350" cy="80" r="20" fill="#C9A84C"/>
+    <circle cx="320" cy="250" r="40" fill="#C9A84C"/>
+    <circle cx="80" cy="220" r="25" fill="#C9A84C"/>
+  </g>
+
+  <!-- Bowl/Plate -->
+  <g transform="translate(200, 170)">
+    <ellipse cx="0" cy="40" rx="140" ry="35" fill="#E8E4DC"/>
+    <ellipse cx="0" cy="35" rx="130" ry="30" fill="#F5F3F0" stroke="#DCD6CC" stroke-width="1"/>
+  </g>
+
+  <!-- Crackers scattered -->
+  <g transform="translate(200, 160)">
+    <!-- Cracker 1 -->
+    <g filter="url(#shadow)">
+      <rect x="-60" y="-30" width="50" height="35" rx="4" fill="url(#crackerGrad)" transform="rotate(-15 -35 -12)"/>
+      <rect x="-58" y="-28" width="46" height="31" rx="3" fill="none" stroke="#B89550" stroke-width="0.5" opacity="0.5" transform="rotate(-15 -35 -12)"/>
+    </g>
+
+    <!-- Cracker 2 -->
+    <g filter="url(#shadow)">
+      <rect x="-20" y="-40" width="55" height="38" rx="4" fill="url(#crackerGrad)" transform="rotate(8 -5 -21)"/>
+      <rect x="-18" y="-38" width="51" height="34" rx="3" fill="none" stroke="#B89550" stroke-width="0.5" opacity="0.5" transform="rotate(8 -5 -21)"/>
+    </g>
+
+    <!-- Cracker 3 -->
+    <g filter="url(#shadow)">
+      <rect x="30" y="-35" width="52" height="36" rx="4" fill="url(#crackerGrad)" transform="rotate(20 56 -17)"/>
+      <rect x="32" y="-33" width="48" height="32" rx="3" fill="none" stroke="#B89550" stroke-width="0.5" opacity="0.5" transform="rotate(20 56 -17)"/>
+    </g>
+
+    <!-- Cracker 4 - front -->
+    <g filter="url(#shadow)">
+      <rect x="-40" y="0" width="58" height="40" rx="5" fill="url(#crackerGrad)"/>
+      <rect x="-37" y="3" width="52" height="34" rx="4" fill="none" stroke="#B89550" stroke-width="0.5" opacity="0.5"/>
+      <!-- Texture dots -->
+      <circle cx="-25" cy="12" r="1.5" fill="#8B6F47" opacity="0.4"/>
+      <circle cx="-10" cy="18" r="1.5" fill="#8B6F47" opacity="0.4"/>
+      <circle cx="5" cy="10" r="1.5" fill="#8B6F47" opacity="0.4"/>
+      <circle cx="15" cy="22" r="1.5" fill="#8B6F47" opacity="0.4"/>
+    </g>
+
+    <!-- Cracker 5 - with cheese -->
+    <g transform="translate(50, 10)" filter="url(#shadow)">
+      <rect x="0" y="0" width="55" height="38" rx="5" fill="url(#crackerGrad)"/>
+      <rect x="3" y="3" width="49" height="32" rx="4" fill="none" stroke="#B89550" stroke-width="0.5" opacity="0.5"/>
+      <!-- Cheese topping -->
+      <circle cx="15" cy="12" r="5" fill="url(#cheeseGrad)" opacity="0.9"/>
+      <circle cx="30" cy="18" r="6" fill="url(#cheeseGrad)" opacity="0.9"/>
+      <circle cx="42" cy="10" r="4" fill="url(#cheeseGrad)" opacity="0.9"/>
+    </g>
+
+    <!-- Cracker 6 - back left -->
+    <g transform="translate(-70, 20)" filter="url(#shadow)">
+      <rect x="0" y="0" width="48" height="33" rx="4" fill="#D4B077" transform="rotate(-25 24 16)"/>
+    </g>
+
+    <!-- Cracker 7 - back right -->
+    <g transform="translate(90, 5)" filter="url(#shadow)">
+      <rect x="0" y="0" width="50" height="35" rx="4" fill="#D4B077" transform="rotate(30 25 17)"/>
+    </g>
+  </g>
+
+  <!-- Label badge -->
+  <g transform="translate(50, 220)">
+    <rect x="0" y="0" width="160" height="50" rx="8" fill="#C9A84C" filter="url(#shadow)"/>
+    <text x="80" y="22" text-anchor="middle" fill="#FFF" font-family="Georgia, serif" font-size="16" font-weight="bold">Сухарики</text>
+    <text x="80" y="40" text-anchor="middle" fill="#FFF" font-family="Georgia, serif" font-size="11">4 вкуса</text>
+  </g>
+
+  <!-- Decorative wheat -->
+  <g transform="translate(280, 40)">
+    <path d="M0 50 Q8 30 3 15 Q-2 5 8 0" stroke="#C9A84C" stroke-width="2" fill="none"/>
+    <ellipse cx="6" cy="8" rx="5" ry="10" fill="#D4A574" transform="rotate(-20 6 8)"/>
+    <ellipse cx="3" cy="22" rx="4" ry="9" fill="#D4A574" transform="rotate(-30 3 22)"/>
+    <ellipse cx="8" cy="35" rx="4" ry="8" fill="#D4A574" transform="rotate(-40 8 35)"/>
+  </g>
+</svg>

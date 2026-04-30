@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хлеб ЗДОРОВЬЕ — Цельнозерновой хлеб из пророщенной пшеницы</title>
+    <meta name="description" content="Цельнозерновой хлеб ЗДОРОВЬЕ из пророщенной пшеницы. Без глютена, без дрожжей, без консервантов. Г.Ташкент, Мирабадский район.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-icon">🌾</span>
+                <div class="logo-text">
+                    <span class="logo-main">Хлеб ЗДОРОВЬЕ</span>
+                    <span class="logo-sub">Цельнозерновой из пророщенной пшеницы</span>
+                </div>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">О нас</a></li>
+                <li><a href="#nutrition" class="nav-link">КБЖУ</a></li>
+                <li><a href="#technology" class="nav-link">Технология</a></li>
+                <li><a href="#products" class="nav-link">Продукция</a></li>
+                <li><a href="#comparison" class="nav-link">Сравнение</a></li>
+                <li><a href="#faq" class="nav-link">Вопросы</a></li>
+                <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                <li><a href="#location" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <section class="hero" id="hero">
+        <div class="slider" id="heroSlider">
+            <div class="slide active" style="background-image: url('img/hero-bg.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Хлеб ЗДОРОВЬЕ</h1>
+                    <p class="slide-subtitle">Цельнозерновой хлеб из пророщенной пшеницы</p>
+                    <p class="slide-desc">Для здорового образа жизни и диетического питания</p>
+                    <a href="#products" class="btn btn-primary">Наша продукция</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/about-bg.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Натуральный состав</h1>
+                    <p class="slide-subtitle">Без дрожжей, муки и консервантов</p>
+                    <p class="slide-desc">Только проросшая пшеница, хмелевая закваска, соль и вода</p>
+                    <a href="#about" class="btn btn-primary">Узнать больше</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/parallax-bg.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Без глютена</h1>
+                    <p class="slide-subtitle">Источник пищевых волокон</p>
+                    <p class="slide-desc">Рекомендован при диабете, заболеваниях ЖКТ и непереносимости глютена</p>
+                    <a href="#faq" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev" id="sliderPrev" aria-label="Предыдущий слайд">❮</button>
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+            <button class="slider-btn next" id="sliderNext" aria-label="Следующий слайд">❯</button>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-mouse"></span>
+            <span class="scroll-text">Листайте вниз</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">О нашем продукте</span>
+                <h2 class="section-title">Почему Хлеб ЗДОРОВЬЕ?</h2>
+                <p class="section-desc">Натуральный цельнозерновой хлеб из пророщенной пшеницы для тех, кто заботится о своем здоровье</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="img/o nas.png" alt="Хлеб ЗДОРОВЬЕ" loading="lazy">
+                    <div class="about-badge">
+                        <span class="badge-icon">✓</span>
+                        <span class="badge-text">100%<br>Натуральный</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🌱</div>
+                            <div class="feature-text">
+                                <h4>Для здорового образа жизни</h4>
+                                <p>Полезный хлеб для тех, кто следит за питанием и заботится о здоровье</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🥗</div>
+                            <div class="feature-text">
+                                <h4>Диетическое питание</h4>
+                                <p>Идеально подходит для диетического и оздоровительного питания</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌾</div>
+                            <div class="feature-text">
+                                <h4>Источник пищевых волокон</h4>
+                                <p>Богат клетчаткой, способствует здоровой работе пищеварительной системы</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✨</div>
+                            <div class="feature-text">
+                                <h4>Без глютена</h4>
+                                <p>Рекомендован для людей с непереносимостью глютена и заболеваниями ЖКТ</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💊</div>
+                            <div class="feature-text">
+                                <h4>Витамины и микроэлементы</h4>
+                                <p>Содержит витамины группы B, E, микроэлементы и полезные вещества</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🚫</div>
+                            <div class="feature-text">
+                                <h4>Без добавок</h4>
+                                <p>Без дрожжей, муки, консервантов и пищевых добавок. Только натуральные ингредиенты</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-info-box">
+                        <h4>Состав продукта</h4>
+                        <p>Изготовляется из твердых сортов <strong>проросшей пшеницы</strong>, <strong>хмелевой закваски</strong>, соли и воды. Длительный срок годности достигается за счет стерилизации, а не химических консервантов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section -->
+    <section class="parallax-section" id="parallax">
+        <div class="parallax-bg" style="background-image: url('img/parallax-bg.jpg');"></div>
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content">
+            <span class="parallax-label">Натурально и полезно</span>
+            <h2 class="parallax-title">Здоровье начинается с питания</h2>
+            <p class="parallax-text">Наш хлеб рекомендован для диетпитания, больных сахарным диабетом, людей с непереносимостью глютена и заболеваниями желудочно-кишечного тракта</p>
+            <a href="#products" class="btn btn-outline">Выбрать продукт</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Наша продукция</span>
+                <h2 class="section-title">Продукты «ЗДОРОВЬЕ»</h2>
+                <p class="section-desc">Вся продукция изготавливается из цельнозерновой пророщенной пшеницы по уникальной рецептуре</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/hleb.png" alt="Хлеб ЗДОРОВЬЕ" loading="lazy">
+                        <div class="product-badge">Хит продаж</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Хлеб «ЗДОРОВЬЕ»</h3>
+                        <p class="product-desc">Классический цельнозерновой хлеб из пророщенной пшеницы. Натуральный состав, богатый вкус и польза для организма.</p>
+                        <ul class="product-features">
+                            <li>✓ Без глютена</li>
+                            <li>✓ Без дрожжей</li>
+                            <li>✓ Богат клетчаткой</li>
+                        </ul>
+                        <a href="#location" class="btn btn-secondary">Где купить</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/suharki.png" alt="Сухарики ЗДОРОВЬЕ" loading="lazy">
+                        <div class="product-badge">4 вкуса</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Сухарики «ЗДОРОВЬЕ»</h3>
+                        <p class="product-desc">Хрустящие цельнозерновые сухарики в ассортименте вкусов. Идеальны для перекуса и диетического питания.</p>
+                        <ul class="product-features">
+                            <li>✓ Шашлычные (соленые)</li>
+                            <li>✓ Сырные (соленые)</li>
+                            <li>✓ Классические (диетические)</li>
+                            <li>✓ Чесночные (соленые)</li>
+                        </ul>
+                        <a href="#location" class="btn btn-secondary">Где купить</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/hlebci.png" alt="Хлебцы SNACK ЗДОРОВЬЕ" loading="lazy">
+                        <div class="product-badge">Новинка</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Хлебцы «SNACK» ЗДОРОВЬЕ</h3>
+                        <p class="product-desc">Удобный формат хлебцов для перекуса на работе, в дороге или дома. Сохраняют все полезные свойства пророщенной пшеницы.</p>
+                        <ul class="product-features">
+                            <li>✓ Шашлычные (соленые)</li>
+                            <li>✓ Сырные (соленые)</li>
+                            <li>✓ Классические (диетические)</li>
+                            <li>✓ Чесночные (соленые)</li>
+                        </ul>
+                        <a href="#location" class="btn btn-secondary">Где купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Информация</span>
+                <h2 class="section-title">Вопросы и ответы</h2>
+                <p class="section-desc">Отвечаем на самые частые вопросы о нашем хлебе</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Из чего изготавливается хлеб «ЗДОРОВЬЕ»?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Наш хлеб изготавливается из твердых сортов <strong>проросшей пшеницы</strong>, <strong>хмелевой закваски</strong>, соли и воды. <strong>Без дрожжей, муки, консервантов и пищевых добавок</strong>. Длительный срок годности продукта достигается за счет стерилизации.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Подходит ли хлеб для диабетиков?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да! Наш хлеб <strong>рекомендован для больных сахарным диабетом</strong>. Он имеет низкий гликемический индекс благодаря использованию пророщенной пшеницы и отсутствию быстрых углеводов.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Можно ли есть при непереносимости глютена?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, наш хлеб <strong>без глютена</strong> и подходит для людей с непереносимостью глютена (целиакией), а также при заболеваниях желудочно-кишечного тракта.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Какие вкусы сухариков и хлебцев есть в ассортименте?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Сухарики и хлебцы представлены в 4 вкусах: <strong>Шашлычные (соленые)</strong>, <strong>Сырные (соленые)</strong>, <strong>Классические (диетические)</strong> и <strong>Чесночные (соленые)</strong>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Как достигается длительный срок годности?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Длительный срок годности продукта достигается за счет <strong>стерилизации</strong> — естественного способа сохранения без использования химических консервантов и добавок.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Где можно купить продукцию «ЗДОРОВЬЕ»?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Вы можете приобрести нашу продукцию по адресу: <strong>г. Ташкент, Мирабадский район, ул. Авлие-ота, 93</strong>. Также можно связаться по телефону для уточнения точек продаж.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section class="nutrition" id="nutrition">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Пищевая ценность</span>
+                <h2 class="section-title">Состав и КБЖУ на 100г</h2>
+                <p class="section-desc">Наш хлеб — источник энергии и пользы для вашего организма</p>
+            </div>
+            <div class="nutrition-grid">
+                <div class="nutrition-cards">
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">🔥</div>
+                        <div class="nutrition-value">198 ккал</div>
+                        <div class="nutrition-label">Энергетическая ценность</div>
+                    </div>
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">💪</div>
+                        <div class="nutrition-value">7.2 г</div>
+                        <div class="nutrition-label">Белки</div>
+                    </div>
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">🥑</div>
+                        <div class="nutrition-value">2.8 г</div>
+                        <div class="nutrition-label">Жиры</div>
+                    </div>
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">🍞</div>
+                        <div class="nutrition-value">38.5 г</div>
+                        <div class="nutrition-label">Углеводы</div>
+                    </div>
+                    <div class="nutrition-card highlight">
+                        <div class="nutrition-icon">🌾</div>
+                        <div class="nutrition-value">12.5 г</div>
+                        <div class="nutrition-label">Пищевые волокна</div>
+                    </div>
+                    <div class="nutrition-card highlight">
+                        <div class="nutrition-icon">📊</div>
+                        <div class="nutrition-value">35</div>
+                        <div class="nutrition-label">Гликемический индекс</div>
+                    </div>
+                </div>
+                <div class="nutrition-info">
+                    <h3>Витамины и минералы</h3>
+                    <ul class="vitamins-list">
+                        <li>
+                            <span class="vitamin-name">Витамин B1 (Тиамин)</span>
+                            <span class="vitamin-value">0.45 мг</span>
+                        </li>
+                        <li>
+                            <span class="vitamin-name">Витамин B2 (Рибофлавин)</span>
+                            <span class="vitamin-value">0.28 мг</span>
+                        </li>
+                        <li>
+                            <span class="vitamin-name">Витамин B6 (Пиридоксин)</span>
+                            <span class="vitamin-value">0.52 мг</span>
+                        </li>
+                        <li>
+                            <span class="vitamin-name">Витамин E (Токоферол)</span>
+                            <span class="vitamin-value">2.8 мг</span>
+                        </li>
+                        <li>
+                            <span class="vitamin-name">Магний</span>
+                            <span class="vitamin-value">125 мг</span>
+                        </li>
+                        <li>
+                            <span class="vitamin-name">Фосфор</span>
+                            <span class="vitamin-value">380 мг</span>
+                        </li>
+                        <li>
+                            <span class="vitamin-name">Калий</span>
+                            <span class="vitamin-value">420 мг</span>
+                        </li>
+                        <li>
+                            <span class="vitamin-name">Железо</span>
+                            <span class="vitamin-value">3.2 мг</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Технология производства</span>
+                <h2 class="section-title">От зерна до готового продукта</h2>
+                <p class="section-desc">Наш хлеб проходит 6 этапов производства для максимальной пользы</p>
+            </div>
+            <div class="technology-steps">
+                <div class="tech-step">
+                    <div class="tech-number">01</div>
+                    <div class="tech-icon">🌾</div>
+                    <h4>Отбор зерна</h4>
+                    <p>Используем только твердые сорта пшеницы высшего качества</p>
+                </div>
+                <div class="tech-step">
+                    <div class="tech-number">02</div>
+                    <div class="tech-icon">💧</div>
+                    <h4>Проращивание</h4>
+                    <p>Зерно проращивается 48 часов для активации полезных веществ</p>
+                </div>
+                <div class="tech-step">
+                    <div class="tech-number">03</div>
+                    <div class="tech-icon">🥣</div>
+                    <h4>Замес</h4>
+                    <p>Добавляем хмелевую закваску, соль и воду — никаких дрожжей</p>
+                </div>
+                <div class="tech-step">
+                    <div class="tech-number">04</div>
+                    <div class="tech-icon">🔥</div>
+                    <h4>Выпечка</h4>
+                    <p>Медленная выпечка при оптимальной температуре для сохранения пользы</p>
+                </div>
+                <div class="tech-step">
+                    <div class="tech-number">05</div>
+                    <div class="tech-icon">🛡️</div>
+                    <h4>Стерилизация</h4>
+                    <p>Естественный способ консервации без химических добавок</p>
+                </div>
+                <div class="tech-step">
+                    <div class="tech-number">06</div>
+                    <div class="tech-icon">📦</div>
+                    <h4>Упаковка</h4>
+                    <p>Герметичная упаковка сохраняет свежесть и пользу продукта</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison" id="comparison">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Сравнение</span>
+                <h2 class="section-title">Почему наш хлеб лучше</h2>
+                <p class="section-desc">Наглядное сравнение с обычным магазинным хлебом</p>
+            </div>
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="col-header"></div>
+                    <div class="col-header our">
+                        <span class="brand-name">Хлеб ЗДОРОВЬЕ</span>
+                        <span class="brand-tag">Натуральный</span>
+                    </div>
+                    <div class="col-header regular">
+                        <span class="brand-name">Обычный хлеб</span>
+                        <span class="brand-tag">Магазинный</span>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-label">Дрожжи</div>
+                    <div class="row-value our">✓ Без дрожжей</div>
+                    <div class="row-value regular">✗ Содержит дрожжи</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-label">Мука</div>
+                    <div class="row-value our">✓ Цельное зерно</div>
+                    <div class="row-value regular">✗ Рафинированная мука</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-label">Консерванты</div>
+                    <div class="row-value our">✓ Без консервантов</div>
+                    <div class="row-value regular">✗ Химические добавки</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-label">Клетчатка</div>
+                    <div class="row-value our">✓ 12.5 г на 100г</div>
+                    <div class="row-value regular">✗ 2-3 г на 100г</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-label">Гликемический индекс</div>
+                    <div class="row-value our">✓ Низкий (35)</div>
+                    <div class="row-value regular">✗ Высокий (70-85)</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-label">Витамины</div>
+                    <div class="row-value our">✓ Сохранены полностью</div>
+                    <div class="row-value regular">✗ Разрушены при обработке</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="row-label">Для диабетиков</div>
+                    <div class="row-value our">✓ Рекомендован</div>
+                    <div class="row-value regular">✗ Не рекомендуется</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Отзывы</span>
+                <h2 class="section-title">Что говорят наши покупатели</h2>
+                <p class="section-desc">Реальные отзывы людей, которые выбрали здоровое питание</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Наконец-то нашла хлеб, который можно есть при диабете! Вкусный, сытный, а главное — полезный. Покупаю уже полгода."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">ЛК</div>
+                        <div class="review-info">
+                            <span class="review-name">Лариса К.</span>
+                            <span class="review-role">Покупатель с 2023 года</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"У меня непереносимость глютена, и этот хлеб — настоящее спасение! Наконец-то могу наслаждаться вкусом хлеба без последствий."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">АМ</div>
+                        <div class="review-info">
+                            <span class="review-name">Алексей М.</span>
+                            <span class="review-role">Покупатель с 2024 года</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Сухарики просто бомба! Особенно сырные. Беру на работу каждый день — отличный перекус без вреда для фигуры."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">НР</div>
+                        <div class="review-info">
+                            <span class="review-name">Наталья Р.</span>
+                            <span class="review-role">Покупатель с 2023 года</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Вся семья перешла на этот хлеб. Дети любят хлебцы SNACK, а мы с мужем едим классический хлеб. Натуральный вкус детства!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">ИС</div>
+                        <div class="review-info">
+                            <span class="review-name">Ирина С.</span>
+                            <span class="review-role">Покупатель с 2022 года</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Работаю диетологом и рекомендую своим пациентам хлеб «Здоровье». Отличный состав, натуральные ингредиенты, реальная польза."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">ДК</div>
+                        <div class="review-info">
+                            <span class="review-name">Дмитрий К.</span>
+                            <span class="review-role">Диетолог-нутрициолог</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Хлебцы SNACK чесночные — моя слабость! Беру каждую неделю. Нравится, что состав чистый, без химии."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">ОВ</div>
+                        <div class="review-info">
+                            <span class="review-name">Олег В.</span>
+                            <span class="review-role">Покупатель с 2024 года</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Контакты</span>
+                <h2 class="section-title">Где нас найти</h2>
+                <p class="section-desc">Приходите за свежим и полезным хлебом!</p>
+            </div>
+            <div class="location-grid">
+                <div class="location-info">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h4>Адрес</h4>
+                        <p>г. Ташкент<br>Мирабадский район<br>ул. Авлие-ота, 93</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h4>Телефон</h4>
+                        <p><a href="tel:+998909250393">+998 90 925-03-93</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🏢</div>
+                        <h4>Компания</h4>
+                        <p>ЧП «Avesta art tur»</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <h4>Режим работы</h4>
+                        <p>Пн — Сб: 09:00 — 18:00<br>Вс: выходной</p>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.7243847954444!2d69.2797!3d41.2995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE3JzU4LjIiTiA2OcKwMTYnNDcuMCJF!5e0!3m2!1sru!2s!4v1600000000000!5m2!1sru!2s"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Карта расположения Хлеб ЗДОРОВЬЕ">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🌾</span>
+                        <span class="logo-main">Хлеб ЗДОРОВЬЕ</span>
+                    </div>
+                    <p class="footer-desc">Цельнозерновой хлеб из пророщенной пшеницы. Здоровое питание для всей семьи.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#hero">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#nutrition">КБЖУ</a></li>
+                        <li><a href="#technology">Технология</a></li>
+                        <li><a href="#products">Продукция</a></li>
+                        <li><a href="#comparison">Сравнение</a></li>
+                        <li><a href="#faq">Вопросы</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Продукция</h4>
+                    <ul>
+                        <li><a href="#products">Хлеб «ЗДОРОВЬЕ»</a></li>
+                        <li><a href="#products">Сухарики</a></li>
+                        <li><a href="#products">Хлебцы «SNACK»</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <p>📍 г. Ташкент, Мирабадский район, ул. Авлие-ота, 93</p>
+                    <p>📞 <a href="tel:+998909250393">+998 90 925-03-93</a></p>
+                    <p>🏢 ЧП «Avesta art tur»</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Хлеб ЗДОРОВЬЕ. Все права защищены.</p>
+                <p>ЧП «Avesta art tur» — г. Ташкент</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
