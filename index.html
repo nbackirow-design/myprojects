@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almazmed — Клиника в Ташкенте</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-left">
+            <span>📍 г. Ташкент, ул. Буюк Ипак Йули, 253</span>
+            <span>🕐 Пн-Сб: 8:00 — 18:00</span>
+        </div>
+        <div class="top-bar-right">
+            <a href="tel:+998905900002">+998 (90) 590-00-02</a>
+            <a href="tel:+998712530426">+998 (71) 253-04-26</a>
+            <a href="#" style="color:var(--accent);">Instagram</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <a href="#" class="logo">Almaz<span>med</span></a>
+        <nav class="nav">
+            <a href="#services">Услуги</a>
+            <a href="#doctors">Врачи</a>
+            <a href="#about">О клинике</a>
+            <a href="#equipment">Оборудование</a>
+            <a href="#testimonials">Отзывы</a>
+            <a href="#prices">Прайс-лист</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="header-actions">
+            <div class="lang-switch">
+                <a href="#" class="active">RU</a>
+                <a href="#">UZ</a>
+            </div>
+            <button class="btn btn-primary" onclick="openModal()">Заказать звонок</button>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-bg">
+        <img src="img/hero-bg.jpg" alt="Клиника Almazmed">
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">🏥 Многопрофильная клиника в Ташкенте</div>
+            <h1>Ваше здоровье — <span>в руках экспертов</span></h1>
+            <p>Клиника Almazmed — единственная многопрофильная клиника высокого уровня, где проводят лечение как традиционной медициной, так и современными методами.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="openModal()">Записаться на приём</button>
+                <a href="#services" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.4);">Наши услуги</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat"><h3>10+</h3><p>Лет опыта</p></div>
+                <div class="hero-stat"><h3>15+</h3><p>Специалистов</p></div>
+                <div class="hero-stat"><h3>6</h3><p>Направлений</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features-strip">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-card reveal"><div class="feature-icon">🧠</div><h3>Неврология</h3><p>Лечение заболеваний нервной системы, инсультов, невралгий и эпилепсии.</p><a href="#services" class="link">Подробнее →</a></div>
+            <div class="feature-card reveal"><div class="feature-icon">❤️</div><h3>Кардиология</h3><p>Диагностика и лечение заболеваний сердечно-сосудистой системы.</p><a href="#services" class="link">Подробнее →</a></div>
+            <div class="feature-card reveal"><div class="feature-icon">🦴</div><h3>Суставы и позвоночник</h3><p>Артроз, артрит, грыжи, протрузии — эффективное лечение.</p><a href="#services" class="link">Подробнее →</a></div>
+            <div class="feature-card reveal"><div class="feature-icon">🦷</div><h3>Стоматология</h3><p>Лечение зубов, протезирование и имплантация по доступным ценам.</p><a href="#services" class="link">Подробнее →</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Медицинские услуги</span>
+            <h2>Услуги по направлениям</h2>
+            <p>В нашей клинике вам готовы оказать помощь высококвалифицированные врачи с многолетним опытом.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <img src="img/service-neuro.jpg" alt="Неврология">
+                <div class="service-card-content"><h3>Неврология</h3><p>Диагностика и лечение головного и спинного мозга, нервных окончаний, инсультов, эпилепсии, неврозов.</p><span class="link">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+            </div>
+            <div class="service-card reveal">
+                <img src="img/service-therapy.jpg" alt="Терапия">
+                <div class="service-card-content"><h3>Терапия</h3><p>Комплексная диагностика и лечение внутренних органов, хронических заболеваний.</p><span class="link">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+            </div>
+            <div class="service-card reveal">
+                <img src="img/service-cardio.jpg" alt="Кардиология">
+                <div class="service-card-content"><h3>Кардиология</h3><p>Диагностика и лечение заболеваний сердца и сосудов. Современные методы обследования.</p><span class="link">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+            </div>
+            <div class="service-card reveal">
+                <img src="img/service-gyn.jpg" alt="Гинекология">
+                <div class="service-card-content"><h3>Гинекология</h3><p>Комплексное обследование, лечение и профилактика гинекологических заболеваний.</p><span class="link">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+            </div>
+            <div class="service-card reveal">
+                <img src="img/service-lor.jpg" alt="ЛОР">
+                <div class="service-card-content"><h3>ЛОР</h3><p>Диагностика и лечение заболеваний уха, горла и носа. Современное оборудование.</p><span class="link">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+            </div>
+            <div class="service-card reveal">
+                <img src="img/service-ped.jpg" alt="Педиатрия">
+                <div class="service-card-content"><h3>Педиатрия</h3><p>Забота о здоровье детей от младенчества до подросткового возраста.</p><span class="link">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Doctors -->
+<section class="doctors" id="doctors">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Наши специалисты</span>
+            <h2>У нас работают настоящие профессионалы</h2>
+            <p>Высококвалифицированные врачи с многолетним опытом и успешной медицинской практикой.</p>
+        </div>
+        <div class="doctors-grid">
+            <div class="doctor-card reveal"><div class="doctor-img"><img src="img/doc-1.jpg" alt="Юлдашева С."></div><div class="doctor-info"><h4>Юлдашева Севара Ядгаровна</h4><div class="spec">Психолог</div><div class="exp">⭐ Стаж — 3 года</div><div class="schedule">Приём: Пн-Пт 13:00-17:00</div><div class="price">Консультация — 300 000 сум</div></div></div>
+            <div class="doctor-card reveal"><div class="doctor-img"><img src="img/doc-2.jpg" alt="Алмазбеков А."></div><div class="doctor-info"><h4>Алмазбеков Адылбек Галипович</h4><div class="spec">Стоматолог</div><div class="exp">⭐ Стаж — 2 года</div><div class="schedule">Приём: Пн-Сб 9:00-17:00</div><div class="price">Консультация — бесплатно</div></div></div>
+            <div class="doctor-card reveal"><div class="doctor-img"><img src="img/doc-3.jpg" alt="Закиров Д."></div><div class="doctor-info"><h4>Закиров Дониёр Анварович</h4><div class="spec">Детский невролог-иглорефлексотерапевт</div><div class="exp">⭐ Стаж — 6 лет</div><div class="schedule">Приём: Пн-Сб 8:30-17:00</div><div class="price">Консультация — 200 000 сум</div></div></div>
+            <div class="doctor-card reveal"><div class="doctor-img"><img src="img/doc-4.jpg" alt="Каримов Ш."></div><div class="doctor-info"><h4>Каримов Шерзод</h4><div class="spec">Невролог</div><div class="exp">⭐ Стаж — 8 лет</div><div class="schedule">Приём: Пн-Пт 9:00-18:00</div><div class="price">Консультация — 250 000 сум</div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-images reveal">
+                <div class="about-img-main"><img src="img/about-clinic.jpg" alt="Клиника Almazmed"></div>
+                <div class="about-img-float"><div class="num">10+</div><div class="label">Лет успешной работы в Ташкенте</div></div>
+            </div>
+            <div class="about-content reveal">
+                <span class="section-tag">О клинике</span>
+                <h2>Добро пожаловать в клинику Almazmed</h2>
+                <p>Клиника Almazmed является единственной многопрофильной клиникой высокого уровня, где проводят лечение как традиционной медициной, так и современными методами.</p>
+                <p>На сегодняшний день мы проводим успешное лечение заболеваний нервной и сердечной системы, инсульта, артроза, артрита, грыж, боли в суставах, протрузий, простаты, печени, энуреза, алкоголизма, а также многих других хронических болезней.</p>
+                <div class="about-features">
+                    <div class="about-feature"><div class="check">✓</div><span>Современное оборудование</span></div>
+                    <div class="about-feature"><div class="check">✓</div><span>Опытные специалисты</span></div>
+                    <div class="about-feature"><div class="check">✓</div><span>Индивидуальный подход</span></div>
+                    <div class="about-feature"><div class="check">✓</div><span>Приемлемые цены</span></div>
+                </div>
+                <button class="btn btn-primary" style="margin-top:32px;" onclick="openModal()">Записаться на приём</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Equipment -->
+<section class="equipment" id="equipment">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Оборудование</span>
+            <h2>Клиника оснащена современным оборудованием</h2>
+            <p>Мы используем только передовые технологии для точной диагностики и эффективного лечения.</p>
+        </div>
+        <div class="eq-grid">
+            <div class="eq-card reveal"><div class="eq-img"><img src="img/eq-1.jpg" alt="Biossays 240 Plus"></div><div class="type">Диагностика</div><h4>Анализатор Biossays 240 Plus</h4><p>Пропускная способность: постоянные 240 тестов в час, 24 часа в сутки.</p></div>
+            <div class="eq-card reveal"><div class="eq-img"><img src="img/eq-2.jpg" alt="MAGLUMI X8"></div><div class="type">Иммуноанализ</div><h4>MAGLUMI X8</h4><p>Пропускная способность до 600 тестов в час. Полная автоматизация процесса.</p></div>
+            <div class="eq-card reveal"><div class="eq-img"><img src="img/eq-3.jpg" alt="Maglumi X3"></div><div class="type">Иммуноанализ</div><h4>Maglumi X3</h4><p>Автомат-анализатор ИХЛА для высокоточных исследований.</p></div>
+            <div class="eq-card reveal"><div class="eq-img"><img src="img/eq-4.jpg" alt="BS-430"></div><div class="type">Биохимия</div><h4>BS-430</h4><p>Новая модель биохимического анализатора для всех востребованных исследований.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Отзывы пациентов</span>
+            <h2>Что о нас думают</h2>
+            <p>Реальные отзывы наших пациентов о качестве обслуживания и лечении.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal"><div class="quote">"</div><p>Проходил обследование. Современное мед. оборудование. Врачи-профессионалы. Везде комфорт и уют, чистота и порядок. Очередь на приём практически отсутствует.</p><div class="testimonial-author"><img src="img/review-1.jpg" alt="Виктор"><div><h5>Виктор Тягаев</h5><span>Пациент</span></div></div></div>
+            <div class="testimonial-card reveal"><div class="quote">"</div><p>Хочется выразить благодарность отличному специалисту, обратился с острой болью в спине. Назначенное лечение определённо принесло результат: снова на ногах. Спасибо огромное!</p><div class="testimonial-author"><img src="img/review-2.jpg" alt="Эльмурод"><div><h5>Эльмурод Муртазин</h5><span>Пациент</span></div></div></div>
+            <div class="testimonial-card reveal"><div class="quote">"</div><p>Уже не в первый раз обращаюсь в Almazmed. Очень ответственные специалисты. Спасибо Вам за ваш труд, профессионализм и доброе отношение к пациентам.</p><div class="testimonial-author"><img src="img/review-3.jpg" alt="Замира"><div><h5>Замира Атамбаева</h5><span>Пациент</span></div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Price List -->
+<section class="price-section" id="prices">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Прайс-лист</span>
+            <h2>Прайс-лист</h2>
+        </div>
+        <div class="price-search-wrap reveal">
+            <input type="text" id="priceSearch" placeholder="Поиск" oninput="onSearch()">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </div>
+        <div class="price-layout">
+            <aside class="price-sidebar reveal" id="priceTabs"></aside>
+            <div class="price-items" id="priceItems"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Cart Float Button -->
+<button class="cart-float" id="cartBtn" onclick="openCartModal()" style="display:none;">
+    <span>🛒 Корзина</span>
+    <span class="count" id="cartCount">0</span>
+</button>
+
+<!-- Cart Modal -->
+<div class="modal-overlay" id="cartModal">
+    <div class="modal cart-modal-content">
+        <button class="modal-close" onclick="closeCartModal()">×</button>
+        <h3>Корзина</h3>
+        <div id="cartItems"></div>
+        <div class="cart-total" id="cartTotal" style="display:none;">
+            <span>Итого:</span>
+            <span class="sum" id="cartSum">0 UZS</span>
+        </div>
+        <button class="btn btn-primary" style="width:100%;margin-top:16px;" onclick="submitCart()">Оформить заявку</button>
+    </div>
+</div>
+
+<!-- CTA / Contacts -->
+<section class="cta" id="contacts">
+    <div class="container">
+        <div class="cta-grid">
+            <div class="cta-content reveal">
+                <span class="section-tag" style="background:rgba(255,255,255,0.1);color:#fff;">Запись на приём</span>
+                <h2>Запишитесь на консультацию прямо сейчас</h2>
+                <p>Оставьте заявку, и мы свяжемся с вами в ближайшее время для уточнения деталей и записи на приём к нужному специалисту.</p>
+                <div style="display:flex;flex-direction:column;gap:20px;margin-top:32px;">
+                    <div style="display:flex;align-items:center;gap:16px;"><div style="width:48px;height:48px;background:rgba(255,255,255,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;">📍</div><div><div style="font-size:13px;opacity:0.7;">Адрес</div><div style="font-weight:600;">г. Ташкент, ул. Буюк Ипак Йули, 253</div></div></div>
+                    <div style="display:flex;align-items:center;gap:16px;"><div style="width:48px;height:48px;background:rgba(255,255,255,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;">📞</div><div><div style="font-size:13px;opacity:0.7;">Телефон</div><div style="font-weight:600;">+998 (90) 590-00-02</div></div></div>
+                    <div style="display:flex;align-items:center;gap:16px;"><div style="width:48px;height:48px;background:rgba(255,255,255,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;">🕐</div><div><div style="font-size:13px;opacity:0.7;">График работы</div><div style="font-weight:600;">Пн-Сб: 8:00 — 18:00</div></div></div>
+                </div>
+            </div>
+            <div class="cta-form reveal">
+                <h3>Оставить заявку</h3>
+                <form onsubmit="return handleFormSubmit(event, this)">
+                    <div class="form-group"><label>Ваше имя</label><input type="text" placeholder="Введите имя" required></div>
+                    <div class="form-group"><label>Телефон</label><input type="tel" placeholder="+998 (__) ___-__-__" required></div>
+                    <div class="form-group"><label>Выберите направление</label><select><option>Неврология</option><option>Терапия</option><option>Кардиология</option><option>Гинекология</option><option>ЛОР</option><option>Педиатрия</option><option>Стоматология</option><option>Психология</option></select></div>
+                    <div class="form-group"><label>Сообщение (необязательно)</label><textarea placeholder="Опишите вашу проблему..."></textarea></div>
+                    <button type="submit" class="form-submit">Отправить заявку</button>
+                    <p class="form-privacy">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</p>
+                </form>
+                <div class="success-msg" id="formSuccess"><div class="icon">✓</div><h4>Заявка отправлена!</h4><p>Мы свяжемся с вами в ближайшее время.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Bar -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-bar-grid">
+            <div class="contact-bar-item"><div class="icon">📍</div><div><h4>Адрес</h4><p>Ташкент, ул. Буюк Ипак Йули, 253</p></div></div>
+            <div class="contact-bar-item"><div class="icon">📞</div><div><h4>Телефон</h4><p>+998 (90) 590-00-02</p></div></div>
+            <div class="contact-bar-item"><div class="icon">📞</div><div><h4>Доп. телефон</h4><p>+998 (71) 253-04-26</p></div></div>
+            <div class="contact-bar-item"><div class="icon">🕐</div><div><h4>График</h4><p>Пн-Сб: 8:00 — 18:00</p></div></div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand"><div class="logo">Almaz<span>med</span></div><p>Единственная многопрофильная клиника высокого уровня в Ташкенте. Традиционная и современная медицина для вашего здоровья.</p><div class="footer-social"><a href="#">📷</a><a href="#">💬</a><a href="#">📘</a><a href="#">▶️</a></div></div>
+            <div class="footer-col"><h4>Услуги</h4><ul><li><a href="#">Неврология</a></li><li><a href="#">Терапия</a></li><li><a href="#">Кардиология</a></li><li><a href="#">Гинекология</a></li><li><a href="#">ЛОР</a></li><li><a href="#">Педиатрия</a></li></ul></div>
+            <div class="footer-col"><h4>Информация</h4><ul><li><a href="#">О клинике</a></li><li><a href="#">Врачи</a></li><li><a href="#">Цены</a></li><li><a href="#">Отзывы</a></li><li><a href="#">Новости</a></li></ul></div>
+            <div class="footer-col"><h4>Контакты</h4><ul><li><a href="tel:+998905900002">+998 (90) 590-00-02</a></li><li><a href="tel:+998712530426">+998 (71) 253-04-26</a></li><li><a href="#">г. Ташкент, ул. Буюк Ипак Йули, 253</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><span>© 2025 Almazmed. Все права защищены.</span><span>Политика обработки персональных данных</span></div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal">
+    <div class="modal">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <div id="modalFormContent">
+            <h3>Заказать звонок</h3>
+            <p>Оставьте ваши контактные данные, и мы перезвоним вам в ближайшее время.</p>
+            <form onsubmit="return handleFormSubmit(event, this, 'modalSuccess')">
+                <div class="form-group"><label>Ваше имя</label><input type="text" placeholder="Введите имя" required></div>
+                <div class="form-group"><label>Телефон</label><input type="tel" placeholder="+998 (__) ___-__-__" required></div>
+                <button type="submit" class="form-submit" style="border-radius:50px;">Перезвоните мне</button>
+            </form>
+        </div>
+        <div class="success-msg" id="modalSuccess"><div class="icon">✓</div><h4>Заявка отправлена!</h4><p>Мы свяжемся с вами в ближайшее время.</p></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
